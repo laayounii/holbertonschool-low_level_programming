@@ -1,17 +1,19 @@
 #include "main.h"
+
 /**
- *main- prints_alphabet
- * Return: Always (Success)
+ * print_alphabet -  prints _putchar, followed by a new line
+ * Return: Always  (Success)
  */
+
 void print_alphabet(void)
 {
-	char alphabet = 'a';
+	char alphabet;
 
-	while (alphabet <= 'z')
+	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 	{
-		putchar(alphabet);
-		alphabet++;
+		_putchar(alphabet);
 	}
-	putchar('\n');
-	return (0);
+
+	_putchar('\n');
 }
+
