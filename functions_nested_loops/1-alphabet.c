@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- *main- prints the alphabet, in lowercase, followed by a new line.
+ *main- prints_alphabet
  * Return: Always (Success)
  */
-void print_alphabet(void) int main(void)
+int main(void)
 {
 	char alphabet = 'a';
 
