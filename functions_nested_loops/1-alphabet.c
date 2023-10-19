@@ -3,7 +3,7 @@
  *main- prints_alphabet
  * Return: Always (Success)
  */
-int main(void)
+void print_alphabet(void)
 {
 	char alphabet = 'a';
 
