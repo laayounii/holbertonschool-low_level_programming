@@ -1,5 +1,3 @@
-
-Amen Vmen
 #include "main.h"
 #include <stdio.h>
 
