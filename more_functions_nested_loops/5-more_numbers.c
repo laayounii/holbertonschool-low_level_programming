@@ -28,14 +28,14 @@ void more_numbers(void)
 				i = 1;
 				j = 0;
 			}
-			_putchar(i + '0');
+			putchar(i + '0');
 			if ((i == 1) && (j != -1))
 			{
-				_putchar(j + '0');
+				putchar(j + '0');
 				j++;
 			}
 		}
 
-		_putchar('\n');
+		putchar('\n');
 	}
 }
