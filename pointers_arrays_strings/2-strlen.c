@@ -4,7 +4,7 @@
  * @s: the string of address s
  * Return: int value
  */
-int _strlen(chat *s)
+int _strlen(char *s)
 {
 	int i;
 
