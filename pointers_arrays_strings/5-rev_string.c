@@ -1,9 +1,10 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 /**
- * rev_string - function that reverses a string
+ *  rev_string -  a function that reverses a string..
  * @s: the string of address s
- * return: void
+ * Return: void
  */
 void rev_string(char *s)
 {
