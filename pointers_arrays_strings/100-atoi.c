@@ -3,11 +3,11 @@
 #include <stdlib.h>
 #include <string.h>
 /**
-* _atoi - Convert string to an integer.
-* @s: Pointer to a character string.
-*
-* Return: void.
-*/
+ * _atoi - Convert string to an integer.
+ * @s: Pointer to a character string.
+ *
+ * Return: void.
+ */
 
 int _atoi(char *s)
 {
@@ -26,7 +26,8 @@ int _atoi(char *s)
 	}
 	if (*temp != '\0')
 	{
-		do {
+		do
+		{
 			num = num * 10 + (*temp - '0');
 			temp++;
 		} while (*temp >= '0' && *temp <= '9');
