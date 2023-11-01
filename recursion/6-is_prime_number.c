@@ -1,32 +1,27 @@
 #include "main.h"
 /**
-* is_prime_number - returns true if the number is prime
-*@n: the number to check
-*
-*Return: true if the number is prime
-*/
+ * prime - a function check for prime number
+ * @x: The number
+ * @y: divided by y
+ * Return: int value
+ */
+int prime(int x, int y)
+{
+	if (x == y)
+		return (1);
+	if (!(x % y))
+		return (0);
+	return (prime(x, y + 1));
+}
+/**
+ *is_prime_number -a function that returns
+ * the natural square root of a number.
+ * @n: The number
+ * Return: int value
+ */
 int is_prime_number(int n)
 {
-	int start = n / 2;
-
-	if (n <= 1)
+	if (n < 2)
 		return (0);
-	return (is_prime(n, x));
-}
-
-/**
-* is_prime - returns the 1 if n is prime
-* @n: number to be checked
-* @x: number to start checking from
-*
-* Return: 1 if n is prime, 0 otherwise
-*/
-
-int is_prime(int n, int x)
-{
-	if (x <= 1)
-		return (1);
-	else if (n % x == 0)
-		return (0);
-	return (is_prime(n, x - 1));
+	return (prime(n, 2));
 }
