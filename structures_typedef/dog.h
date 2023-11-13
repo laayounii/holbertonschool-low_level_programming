@@ -1,5 +1,5 @@
-#ifndef __STRUCT__
-#define __STRUCT__
+#ifndef dog
+#define dog
 /**
  * struct dog - frist struct
  * @name: First member
