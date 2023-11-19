@@ -11,7 +11,7 @@ int calc_root(int n, int i)
 		return (i);
 	if (i * i > n)
 		return (-1);
-	return calc_root(n, i + 1);
+	return calc_root (n, i + 1);
 }
 /**
  * _sqrt_recursion - compute the natural square root of a number
@@ -22,5 +22,5 @@ int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
-	return calc_root(n, 0);
+	return calc_root (n, 0);
 }
