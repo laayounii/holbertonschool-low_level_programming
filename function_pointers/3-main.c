@@ -1,31 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "3-calc.h"
+
 /**
- * main - Entry point
- * @argc : size of the array
- * @argv : elements of the array
- *
- * Return: 0
+ * main - entry point
+ * @argc: argument count
+ * @argv: argument vector
+ * Return: 0 on success, 98, 99, or 100 on failure
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int (*op_func)(int, int), i, j;
+    int num1, num2, result;
+    int (*op_func)(int, int);
 
-	if (argc != 4)
-	{
-		printf("Error\n"), exit(98);
-	}
-	i = atoi(argv[1]);
-	j = atoi(argv[3]);
+    if (argc != 4)
+    {
+        printf("Error\n");
+        return (98);
+    }
 
-	op_func = get_op_func(argv[2]);
-	if (!op_func)
-	{
-		printf("Error\n"), exit(99);
-	}
-	if (!j && (argv[2][0] == '/' || argv[2][0] == '%'))
-	{
-		printf("Error\n"), exit(100);
-	}
-	printf("%d\n", op_func(i, j));
-	return (0);
+    num1 = atoi(argv[1]);
+    num2 = atoi(argv[3]);
+    op_func = get_op_func(argv[2]);
+
+    if (op_func == NULL)
+    {
+        printf("Error\n");
+        return (99);
+    }
+
+    result = op_func(num1, num2);
+    printf("%d\n", result);
+
+    return (0);
 }
